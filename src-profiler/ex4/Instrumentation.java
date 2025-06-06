@@ -12,7 +12,7 @@ public class Instrumentation {
         ex4.Profiler.addSafeCount();
     }
 
-    @Before(marker = BodyMarker.class, scope = "sun.misc.Unsafe.*")
+    @Before(marker = BodyMarker.class, scope = "sun.misc.Unsafe.allocateInstance")
     public static void profileUnsafeAllocation() {
         ex4.Profiler.addUnsafeCount();
     }
