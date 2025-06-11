@@ -4,7 +4,7 @@ import ch.usi.dag.disl.annotation.Before;
 import ch.usi.dag.disl.marker.BytecodeMarker;
 import ch.usi.dag.disl.marker.BodyMarker;
 
-import ex2.Profiler;
+import ex4.Profiler;
 
 public class Instrumentation {
     @Before(marker = BytecodeMarker.class, args = "new, newarray, anewarray, multianewarray", scope = "*.*")
