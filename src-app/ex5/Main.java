@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 	for (int i = 1; i <= N_THREADS; i++) {
-	    new ex6.MainThread("App Thread: " + i, i).start();
+	    new MainThread("App Thread: " + i, i).start();
 	}
     }
 }
